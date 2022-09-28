@@ -1,5 +1,18 @@
 .header-container{
     background-color: antiquewhite;
     color: #006400;
+   
+    
     /* height: 80px; */
+}
+.align-icon{
+    margin-left: 30px; 
+    display: flex; 
+    align-items: center;
+    padding-left: 80px;
+    
+}
+.align-icon h1{
+    margin-left: 10px;
+   
 }

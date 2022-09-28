@@ -4,6 +4,7 @@ import "./Exercise.css"
 
 const Exercise = () => {
     const [carts,setCart]=useState([]);
+    const [calculate,setCalculate]=useState([])
     useEffect(()=>{
         fetch('data.json')
         .then(res=>res.json())
@@ -13,6 +14,8 @@ const Exercise = () => {
 
     const handleAddClick=(cart)=>{
         console.log(cart)
+        const newCalculate=[...calculate,carts];
+        setCalculate(newCalculate);
     }
 
 
@@ -26,7 +29,10 @@ const Exercise = () => {
                 handleAddClick={handleAddClick}
                 ></Cart>)}
             </div>
-            <div className="calculation-container"><h2>calculate</h2></div>     
+            <div className="calculation-container">
+                <h2>calculate</h2>
+                <p>select item{calculate.length}</p>
+                </div>     
         </div>
     );
 };
