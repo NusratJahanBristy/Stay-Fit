@@ -9,7 +9,13 @@ const Exercise = () => {
         .then(res=>res.json())
         .then(data=>setCart(data))
 
-    },[])
+    },[]);
+
+    const handleAddClick=(cart)=>{
+        console.log(cart)
+    }
+
+
     return (
         <div className='exercise-container'>
             <div className="cart-container">
@@ -17,6 +23,7 @@ const Exercise = () => {
                 {carts.map(cart=><Cart 
                 key={cart.id}
                 cart={cart}
+                handleAddClick={handleAddClick}
                 ></Cart>)}
             </div>
             <div className="calculation-container"><h2>calculate</h2></div>     
