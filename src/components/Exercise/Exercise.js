@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react';
+import Card from '../Card/Card';
 import Cart from '../Cart/Cart';
 import "./Exercise.css"
 
 const Exercise = () => {
     const [carts,setCart]=useState([]);
-    const [calculate,setCalculate]=useState([])
+    const [singleCalculate,setsingleCalculate]=useState([])
     useEffect(()=>{
         fetch('data.json')
         .then(res=>res.json())
@@ -14,24 +15,23 @@ const Exercise = () => {
 
     const handleAddClick=(cart)=>{
         console.log(cart)
-        const newCalculate=[...calculate,carts];
-        setCalculate(newCalculate);
+        const newsingleCalculate=[...singleCalculate,carts];
+        setsingleCalculate(newsingleCalculate);
     }
 
 
     return (
         <div className='exercise-container'>
-            <div className="cart-container">
+            <div className="card-container">
                 {/* <h3>cart{cart.length}</h3> */}
-                {carts.map(cart=><Cart 
+                {carts.map(cart=><Card 
                 key={cart.id}
                 cart={cart}
                 handleAddClick={handleAddClick}
-                ></Cart>)}
+                ></Card>)}
             </div>
-            <div className="calculation-container">
-                <h2>calculate</h2>
-                <p>select item{calculate.length}</p>
+            <div className="cart-container">
+                <Cart singleCalculate={singleCalculate}></Cart>
                 </div>     
         </div>
     );
