@@ -5,9 +5,17 @@ import "./Cart.css"
 const Cart = ({practiceTime}) => {
     console.log(practiceTime)
     const [addbreak,setaddBreak]=useState(0)
-    const firstSecond=()=>{
+    const first=()=>{
         setaddBreak(10)
-
+    }
+    const second=()=>{
+        setaddBreak(20)
+    }
+    const third=()=>{
+        setaddBreak(30)
+    }
+    const fourth=()=>{
+        setaddBreak(40)
     }
     let totaltime=0;
     for(const cart of practiceTime){
@@ -36,10 +44,10 @@ const Cart = ({practiceTime}) => {
             </div>
             <h2>Add a Break</h2>
             <div className='break-time'>
-                <button onClick={firstSecond}>10s</button>
-                <button>20s</button>
-                <button>30s</button>
-                <button>40s</button>
+                <button onClick={first}>10s</button>
+                <button onClick={second}>20s</button>
+                <button onClick={third}>30s</button>
+                <button onClick={fourth}>40s</button>
             </div>
 
 <div className='time-show'>
