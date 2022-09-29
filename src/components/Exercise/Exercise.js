@@ -21,10 +21,6 @@ const Exercise = () => {
         setpracticeTime(newpracticeTime);
         
     }
-
-    // const notoast=()=>toast.success('wow');
-    
-
     return (
         <div className='exercise-container'>
             <div className="card-container">
