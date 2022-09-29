@@ -2,7 +2,6 @@
     position: sticky;
     top: 0;
     padding: 30px 5px;
-    
 }
 .time-show p{
     background-color:  rgb(217, 203, 203);
@@ -17,7 +16,6 @@
 }
 .profile{
     display: flex;
-    /* margin-bottom: 5px; */
 }
 .profile-info{
     display: flex;
@@ -27,16 +25,13 @@
     background-color:  rgb(217, 203, 203);
     color: black;
     border-radius: 8px;
-    line-height: 10px;
- 
-    
+    line-height: 10px;   
 }
 .break-time{
     display: flex;
     justify-content: space-evenly;
     background-color: rgb(217, 203, 203);
     border-radius: 8px;
-
 }
 .break-time button{
 background-color: green;

@@ -24,11 +24,10 @@ const Cart = ({ practiceTime }) => {
         setaddBreak(40)
         localStorage.setItem("breakTime", 40)
     }
-    const modal = () => toast('wow');
+    const modal = () => toast('Congratulation,you are done your activity');
     let totaltime = 0;
     for (const cart of practiceTime) {
         totaltime = totaltime + cart.settime;
-
     }
     return (
         <div className='cart'>
@@ -67,12 +66,8 @@ const Cart = ({ practiceTime }) => {
             <div>
                 <ToastContainer></ToastContainer>
                 <button onClick={modal} className='btn-completed'>Activity Completed
-
                 </button>
-
                 </div>
-
-
         </div>
     );
 };

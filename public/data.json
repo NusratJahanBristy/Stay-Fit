@@ -2,37 +2,43 @@
   {
     "id": "6334996a477a2de1d78b2b78",
     "img": "https://img.freepik.com/free-photo/view-motivated-teenagers-demonstrate-good-flexibility-lean-feet-stretching-exercises-near-stairs-wear-comfortable-sneakers-training-have-dark-healthy-skin-strong-muscular-body_273609-29357.jpg?size=626&ext=jpg&ga=GA1.2.1638212867.1664390079",
+    "age": 20,
     "settime": 21,
-    "name": "Shari Brewer"
+    "name": "Lean to feet"
   },
   {
     "id": "6334996a8849de19532cd4d5",
     "img": "https://img.freepik.com/free-photo/athletic-man-woman-with-dumbbells_155003-11801.jpg?size=626&ext=jpg&ga=GA1.2.1638212867.1664390079",
+    "age": 20,
     "settime": 39,
-    "name": "Ester Cantrell"
+    "name": "Athletic with dumbbells"
   },
   {
     "id": "6334996ad7e17754aaa17a06",
     "img": "https://img.freepik.com/free-photo/young-healthy-man-athlete-doing-exercise-with-ropes-gym-single-male-model-practicing-hard-training-his-upper-body-concept-healthy-lifestyle-sport-fitness-bodybuilding-wellbeing_155003-27879.jpg?size=626&ext=jpg&ga=GA1.2.1638212867.1664390079",
+    "age": 25,
     "settime": 29,
-    "name": "Amelia Vega"
+    "name": "Exercise with the ropes"
   },
   {
     "id": "6334996a41108802af51007c",
     "img": "https://img.freepik.com/free-photo/muscular-sportsman-building-biceps-with-dumbbell_7502-4784.jpg?size=626&ext=jpg&ga=GA1.2.1638212867.1664390079",
+    "age": 30,
     "settime": 27,
-    "name": "Jennie Mccarthy"
+    "name": "Building biceps dumbbell"
   },
   {
     "id": "6334996aac425cc08d6bd79a",
     "img": "https://img.freepik.com/free-photo/young-fitness-man-studio_7502-5004.jpg?w=1060&t=st=1664391344~exp=1664391944~hmac=25e8faf0054a7d986e2460d25eb74ff9017eb6230c818f3b7a04d732950ea79f",
+    "age": 40,
     "settime": 32,
-    "name": "Parks Norton"
+    "name": "Young fitness man in studio"
   },
   {
     "id": "6334996aea49516550636691",
     "img": "https://img.freepik.com/free-photo/fit-young-woman-lifting-barbells-looking-focused-working-out-gym_155003-5353.jpg?size=626&ext=jpg&ga=GA1.2.1638212867.1664390079",
+    "age": 28,
     "settime": 31,
-    "name": "Howe Finch"
+    "name": "Lifting barbells"
   }
 ]
