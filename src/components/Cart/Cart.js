@@ -1,8 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
+import img from "../../img/avater.png"
 import "./Cart.css"
-import img from "../../img/avater.png";
 
-const Cart = ({singleCalculate}) => {
+const Cart = ({practiceTime}) => {
+    console.log(practiceTime)
+    const [addbreak,setaddBreak]=useState(0)
+    const firstSecond=()=>{
+        setaddBreak(10)
+
+    }
+    let totaltime=0;
+    for(const cart of practiceTime){
+        totaltime=totaltime+cart.settime;
+       
+    }
     return (
         <div className='cart'>
             <div className='profile'>
@@ -25,18 +36,17 @@ const Cart = ({singleCalculate}) => {
             </div>
             <h2>Add a Break</h2>
             <div className='break-time'>
-                <p>10s</p>
-                <p>20s</p>
-                <p>30s</p>
-                <p>40s</p>
+                <button onClick={firstSecond}>10s</button>
+                <button>20s</button>
+                <button>30s</button>
+                <button>40s</button>
             </div>
-
 
 <div className='time-show'>
 
     <h2>Practice Details</h2>
-            <p>Practice time {singleCalculate.length}</p>
-            <p>Break time {singleCalculate.length}</p>
+            <p>Practice time {totaltime}</p>
+            <p>Break time {addbreak}</p>
 </div>
 
             <button className='btn-completed'>
@@ -45,5 +55,4 @@ const Cart = ({singleCalculate}) => {
         </div>
     );
 };
-
 export default Cart;

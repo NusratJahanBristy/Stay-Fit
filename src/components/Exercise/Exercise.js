@@ -4,19 +4,19 @@ import Cart from '../Cart/Cart';
 import "./Exercise.css"
 
 const Exercise = () => {
-    const [carts,setCart]=useState([]);
-    const [singleCalculate,setsingleCalculate]=useState([])
+    const [cart,setcart]=useState([]);
+    const [practiceTime,setpracticeTime]=useState([])
     useEffect(()=>{
         fetch('data.json')
         .then(res=>res.json())
-        .then(data=>setCart(data))
+        .then(data=>setcart(data))
 
     },[]);
 
     const handleAddClick=(cart)=>{
-        console.log(cart)
-        const newsingleCalculate=[...singleCalculate,carts];
-        setsingleCalculate(newsingleCalculate);
+        // console.log(cart)
+        const newpracticeTime=[...practiceTime,cart];
+        setpracticeTime(newpracticeTime);
     }
 
 
@@ -24,14 +24,14 @@ const Exercise = () => {
         <div className='exercise-container'>
             <div className="card-container">
                 {/* <h3>cart{cart.length}</h3> */}
-                {carts.map(cart=><Card 
+                {cart.map(cart=><Card 
                 key={cart.id}
                 cart={cart}
                 handleAddClick={handleAddClick}
                 ></Card>)}
             </div>
             <div className="cart-container">
-                <Cart singleCalculate={singleCalculate}></Cart>
+                <Cart practiceTime={practiceTime}></Cart>
                 </div>     
         </div>
     );
