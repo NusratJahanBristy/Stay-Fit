@@ -1,4 +1,4 @@
-.cart{
+.card{
     width: 300px;
     /* height: 510px; */
     border: 1px solid #95A0A7;
@@ -6,17 +6,17 @@
     margin: 0 auto;
    
 }
-.cart img{
+.card img{
     width: 286px;
     height: 286px;
     margin: 7px;
     border-radius: 8px;
     
 }
-.cart-name{
+.card-name{
     font-size: 21px;
 }
-.btn-cart{
+.btn-card{
     width: 100%;
     background-color: #006400;
     color: white;
@@ -25,7 +25,7 @@
     border: none;
    
 }
-.btn-cart:hover{
+.btn-card:hover{
     background-color:  #006400db;
    
 }

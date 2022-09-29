@@ -1,0 +1,49 @@
+.cart{
+    position: sticky;
+    top: 0;
+    padding: 30px 5px;
+}
+.time-show p{
+    background-color:  rgb(217, 203, 203);
+    color: black;
+    padding: 10px;
+    border-radius: 8px;
+}
+.profile img{
+    width: 50%;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+.profile{
+    display: flex;
+    /* margin-bottom: 5px; */
+}
+.profile-info{
+    display: flex;
+    padding: 10px;
+    margin: 5px;
+    justify-content: space-between;
+    background-color:  rgb(217, 203, 203);
+    color: black;
+    border-radius: 8px;
+    line-height: 10px;
+ 
+    
+}
+.break-time{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(217, 203, 203);
+    border-radius: 8px;
+
+}
+.break-time p{
+background-color: green;
+padding: 8px;
+border-radius: 50%;
+}
+.btn-completed{
+    color: white;
+    background-color: green;
+    width: 100%;
+}

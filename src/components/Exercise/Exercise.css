@@ -3,6 +3,7 @@
     grid-template-columns: 4fr 1fr;
     max-width: 1200px;
     margin: 0 auto;
+    color: white;
  
 }
 
@@ -13,9 +14,9 @@
 
 }
 .cart-container {
-    color: cadetblue;
-    background-color: green;
-    width: 300px;
+    color: white;
+    background-color: black;
+    width: 400px;
 }
 
 
@@ -33,7 +34,7 @@
 
     .card-container {
         grid-template-columns: repeat(1, 1fr);
-        color: red;
+       
     }
 }
 
@@ -53,6 +54,6 @@
     }
     .card-container {
         grid-template-columns: repeat(3, 1fr);
-        color: red;
+        
     }
 }
