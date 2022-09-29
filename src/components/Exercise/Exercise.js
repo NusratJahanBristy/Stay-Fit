@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import Card from '../Card/Card';
 import Cart from '../Cart/Cart';
 import "./Exercise.css"
+import { ToastContainer, toast } from 'react-toastify';
+
 
 const Exercise = () => {
     const [cart,setcart]=useState([]);
@@ -17,8 +19,11 @@ const Exercise = () => {
         // console.log(cart)
         const newpracticeTime=[...practiceTime,cart];
         setpracticeTime(newpracticeTime);
+        
     }
 
+    // const notoast=()=>toast.success('wow');
+    
 
     return (
         <div className='exercise-container'>
@@ -32,7 +37,8 @@ const Exercise = () => {
             </div>
             <div className="cart-container">
                 <Cart practiceTime={practiceTime}></Cart>
-                </div>     
+            </div>  
+              
         </div>
     );
 };
